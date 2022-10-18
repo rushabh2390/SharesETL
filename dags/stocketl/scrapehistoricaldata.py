@@ -11,6 +11,7 @@ from database import Database
 
 class MoneyControlSpider(scrapy.Spider):
     name = "moneycontrol-web"
+    allowed_domains = ['moneycontrol.com']
     chunk_size = 8
     data = []
     format_str = '%Y-%m-%d'
